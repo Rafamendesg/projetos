@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: linear-gradient(to right,#8a35c8, #00eea2, #8a35c8, #18c063);
+  background-size: 180% 180%;
+  animation: gradient-animation 5s ease infinite;
+ 
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+
+}
+
+h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  color: #fff;
+  padding: 0.8em;
+  text-align: center;
+}
+.itens{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+  
+}
+
+.timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  height: 300px;
+  width: 300px;
+  border: 3px solid #000;
+  border-radius: 100%;
+  font-weight: 800;
+  font-family: "Orbitron", sans-serif;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 1.8rem;
+  padding:4rem ;
+  gap: 5px;
+}
+
+#separador{
+  padding: 0 10px;
+}
+.botao{
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
+
+.btin {
+  background-color: #e441d1;
+  width: 13rem;
+  height: 3.5rem;
+  font-size: 1.8em;
+  font-weight:  400;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btin:hover {
+  background-color: #600194;
+  transform: scale(1.1);
+  
+}
+
+.btres{
+  background-color: #220530;
+  width: 13rem;
+  height: 3.5rem;
+  font-size: 1.8em;
+  font-weight:  400;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btres:hover {
+  background-color: #FCE5D8;
+  color: #e05ec4;
+  transform: scale(1.1);
+}
+
+#pausebtn, #resumebtn{
+  display: none;
+}
+
+
+
+
+
+@keyframes gradient-animation {
+  0%{
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

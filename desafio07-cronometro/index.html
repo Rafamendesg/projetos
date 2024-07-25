@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Rafaela M. Gomes">
+  <meta name="description" content="Cronômetro, JavaScript, Css, Html">
+  <link rel="shortcut icon" href="/desafio03-cronometro/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Cronômetro - Online</title>
+</head>
+<body>
+  <main>
+      <section class="itens">
+            <h1>Cronômetro online</h1>
+
+            <div class="timer">
+              <div class="time" id="minutes">00</div>
+              <div class="time" id="separador">:</div>
+              <div class="time" id="seconds">00</div>
+              <div class="time" id="separador">:</div>
+              <div class="time" id="miliseconds">000</div>
+            </div>  
+      </section>
+      <section>
+            <div class="botao">
+              <button class="btin" id="startbtn">Iniciar</button>
+              <button class="btres" id="pausebtn">Pausar</button>
+              <button class="btin" id="resumebtn">Continuar</button>
+              <button class="btres" id="resetbtn">Restaurar</button>
+            </div>
+      </section> 
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
